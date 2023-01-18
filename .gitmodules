@@ -1,6 +1,6 @@
 [submodule "backend"]
 	path = backend
-	url = git@gitlab.com:bicodetech/permanent-recall-backend.git
+	url = ../permanent-recall-backend.git
 [submodule "frontend"]
 	path = frontend
-	url = git@gitlab.com:bicodetech/permanent-recall-frontend.git
+	url = ../permanent-recall-frontend.git
