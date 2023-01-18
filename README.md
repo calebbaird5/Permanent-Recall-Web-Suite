@@ -27,14 +27,19 @@ You can clone this repository and the submodules by using:
 ```bash
 git clone --recursive {repository url}
 ```
-after cloning the repositories make sure you install the dependencies by using `yarn install`. To ensure that you get the correct versions of the dependencies for the docker containers that they will be running in you will want to install them using docker. Simply use the following commands
+after cloning the repositories make sure you install the dependencies by using `yarn install`. To ensure that you get the correct versions of the dependencies for the docker containers that they will be running in you will want to install them using docker. Simply use the following commands:
 ```bash
 docker-compose run --rm frontend yarn install
 docker-compose run --rm backend yarn install
 ```
 this will spin up the frontend and backend containers respectively and run the yarn install command to install the dependencies. Because it is using the `--rm` flag the containers will be removed after the command is complete that way you do not collect a bunch of unused docker containers.
 
-With the dependencies installed you are ready to spin up your docker images. simply run `docker-compose up` this will bring up all 4 docker images and they will be accessible at `localhost:8080`.
+With the dependencies installed you are ready to spin up your docker images. simply run:
+
+```bash
+docker-compose up
+```
+this will bring up all 4 docker images and they will be accessible at `localhost:8080`.
 To stop the servers you can simply use `Ctr-c` or if you are in another terminal window you can use `docker-compose stop`
 
 
